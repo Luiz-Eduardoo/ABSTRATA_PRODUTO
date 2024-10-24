@@ -46,7 +46,7 @@ public abstract class Produto {
 
 	public void setPrecoVenda(float precoVenda) {
 		if(precoVenda <=0) { // se o preço de venda for abaixo ou igual a 0 ele vai dar exceção
-			throw new IllegalArgumentException("O Preço de custo deve ser maior que 0");
+			throw new IllegalArgumentException("O Preço de venda deve ser maior que 0");
 		}
 		this.precoVenda = precoVenda;
 	}
